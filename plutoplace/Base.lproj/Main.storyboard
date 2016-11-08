@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11760" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11755"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="plutoplace" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,281 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pluto-main" translatesAutoresizingMaskIntoConstraints="NO" id="l3W-A4-JjV">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="z5T-Wd-Sug">
+                                <rect key="frame" x="16" y="20" width="244.5" height="227.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="30Z-tU-ie8">
+                                        <rect key="frame" x="0.0" y="0.0" width="116" height="71.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SPACE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URj-Xk-Y5D">
+                                                <rect key="frame" x="0.0" y="0.0" width="56.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADVENTURES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dj-Cb-2wU">
+                                                <rect key="frame" x="0.0" y="25.5" width="116" height="20.5"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KUIPER BELT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSH-dd-OxO">
+                                                <rect key="frame" x="0.0" y="51" width="112" height="20.5"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLUTO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rfd-mU-5Et">
+                                        <rect key="frame" x="0.0" y="91.5" width="244.5" height="86"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="72"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hmx-oS-cSn">
+                                        <rect key="frame" x="0.0" y="197.5" width="172.5" height="30"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="dsu-e1-BCy">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="dc5-m9-aUL"/>
+                                                    <constraint firstAttribute="width" constant="30" id="znE-u7-3wM"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DWARF PLANET" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M7l-lG-fpe">
+                                                <rect key="frame" x="38" y="0.0" width="134.5" height="30"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="WVb-yn-mhg">
+                                <rect key="frame" x="62.5" y="585" width="250" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a9M-jE-lud" customClass="MainButton" customModule="plutoplace" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="50"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="lho-gB-7gG"/>
+                                            <constraint firstAttribute="width" constant="120" id="z66-eq-46N"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="About Pluto">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="jJI-0k-8Md" kind="show" identifier="aboutSegue" id="yTb-TY-G5e"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ou4-AW-ui4" customClass="MainButton" customModule="plutoplace" customModuleProvider="target">
+                                        <rect key="frame" x="130" y="0.0" width="120" height="50"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="kgG-9i-4Yl"/>
+                                            <constraint firstAttribute="height" constant="50" id="qVN-Fa-erV"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="Images">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="ZYj-e5-MKW" kind="show" identifier="imagesSegue" id="15W-S1-lCf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="hNy-c9-qmL"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="l3W-A4-JjV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="3ZP-AI-F1j"/>
+                            <constraint firstAttribute="trailing" secondItem="l3W-A4-JjV" secondAttribute="trailing" id="4ee-lC-Vve"/>
+                            <constraint firstItem="z5T-Wd-Sug" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="816-ek-FXe"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="l3W-A4-JjV" secondAttribute="bottom" id="Gpc-RN-fzn"/>
+                            <constraint firstItem="z5T-Wd-Sug" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="OOc-eF-EbG"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WVb-yn-mhg" secondAttribute="bottom" constant="32" id="UST-x0-Qm3"/>
+                            <constraint firstItem="l3W-A4-JjV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Yhw-an-iMj"/>
+                            <constraint firstItem="WVb-yn-mhg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iJK-Fi-SKE"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+        <!--Sub Controller-->
+        <scene sceneID="2MI-yc-NKz">
+            <objects>
+                <viewController id="jJI-0k-8Md" customClass="SubController" customModule="plutoplace" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EC3-FR-VbO"/>
+                        <viewControllerLayoutGuide type="bottom" id="glm-eq-uF3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5SG-Vb-0sr" userLabel="View">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aboutImg" translatesAutoresizingMaskIntoConstraints="NO" id="2rX-lP-Bjy">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="Ci7-cP-8Ma">
+                                        <variation key="heightClass=compact" constant="160"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="360"/>
+                                    </constraint>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1x1-my-glH">
+                                <rect key="frame" x="16" y="20" width="60" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="G51-ng-VQb"/>
+                                    <constraint firstAttribute="height" constant="40" id="oRi-1E-EJY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="&lt; Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backTouched:" destination="jJI-0k-8Md" eventType="touchUpInside" id="TeJ-LZ-lby"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="WVL-bF-ePA">
+                                <rect key="frame" x="16" y="248" width="343" height="419"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="What Is Pluto?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ghb-kP-uUL">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="35" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AXH-Ae-V1f">
+                                        <rect key="frame" x="0.0" y="31.5" width="343" height="387.5"/>
+                                        <mutableString key="text">Pluto is a dwarf planet. A dwarf planet travels around, or orbits, the sun just like other planets. But it is much smaller.
+
+Clyde Tombaugh discovered Pluto in 1930. He was an astronomer from the United States. An astronomer is a scientist who studies stars and other objects in space. Venetia Burney named Pluto that same year. She was an 11-year-old girl from England.
+
+Pluto is not very big. It is only half as wide as the United States. Pluto is smaller than Earth's moon. This dwarf planet takes 248 Earth years to go around the sun. If you lived on Pluto, you would have to wait 248 Earth years to celebrate your first birthday. One day on Pluto is about 6 1/2 days on Earth.
+
+Pluto is about 40 times farther from the sun than Earth is. Pluto is in an area of space called the Kuiper (KY-per) Belt. Thousands of small, icy objects like Pluto but smaller are in the Kuiper Belt.
+
+This dwarf planet has five moons. Its largest moon is named Charon (KAIR-ən). Charon is about half the size of Pluto. Pluto's four other moons are named Kerberos, Styx, Nix and Hydra.
+</mutableString>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2rX-lP-Bjy" firstAttribute="centerX" secondItem="5SG-Vb-0sr" secondAttribute="centerX" id="0NO-7n-wbR"/>
+                            <constraint firstItem="1x1-my-glH" firstAttribute="leading" secondItem="5SG-Vb-0sr" secondAttribute="leadingMargin" id="0n1-f7-HeG"/>
+                            <constraint firstItem="1x1-my-glH" firstAttribute="top" secondItem="EC3-FR-VbO" secondAttribute="bottom" id="3yk-iZ-HYg"/>
+                            <constraint firstAttribute="trailing" secondItem="2rX-lP-Bjy" secondAttribute="trailing" id="5hW-3j-rqH"/>
+                            <constraint firstItem="glm-eq-uF3" firstAttribute="top" secondItem="WVL-bF-ePA" secondAttribute="bottom" id="Cv1-NX-Ind"/>
+                            <constraint firstItem="2rX-lP-Bjy" firstAttribute="leading" secondItem="5SG-Vb-0sr" secondAttribute="leading" id="Hnf-U9-yuh"/>
+                            <constraint firstItem="2rX-lP-Bjy" firstAttribute="top" secondItem="5SG-Vb-0sr" secondAttribute="top" id="OMl-79-RVF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WVL-bF-ePA" secondAttribute="trailing" id="UCA-tq-6Qp"/>
+                            <constraint firstItem="WVL-bF-ePA" firstAttribute="leading" secondItem="5SG-Vb-0sr" secondAttribute="leadingMargin" id="aPy-QZ-VWq"/>
+                            <constraint firstItem="WVL-bF-ePA" firstAttribute="top" secondItem="2rX-lP-Bjy" secondAttribute="bottom" constant="8" id="qJz-pL-R9M"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PIh-tb-zgN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="972" y="-270.31484257871068"/>
+        </scene>
+        <!--Sub Controller-->
+        <scene sceneID="Z2i-c2-DGi">
+            <objects>
+                <viewController id="ZYj-e5-MKW" customClass="SubController" customModule="plutoplace" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CDb-jR-XbL"/>
+                        <viewControllerLayoutGuide type="bottom" id="VHY-ow-j9p"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JfH-LZ-Sf2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fgf-VU-FC4">
+                                <rect key="frame" x="16" y="0.0" width="343" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="surface1" translatesAutoresizingMaskIntoConstraints="NO" id="Iwl-P6-nZv">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="127"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="surface2" translatesAutoresizingMaskIntoConstraints="NO" id="0r8-3X-eDl">
+                                        <rect key="frame" x="0.0" y="135" width="343" height="127"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="surface3" translatesAutoresizingMaskIntoConstraints="NO" id="u14-Px-TgF">
+                                        <rect key="frame" x="0.0" y="270" width="343" height="127"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="surface4" translatesAutoresizingMaskIntoConstraints="NO" id="y5Q-4g-cQa">
+                                        <rect key="frame" x="0.0" y="405" width="343" height="127"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="surface5" translatesAutoresizingMaskIntoConstraints="NO" id="BMr-Zc-2wD">
+                                        <rect key="frame" x="0.0" y="540" width="343" height="127"/>
+                                    </imageView>
+                                </subviews>
+                                <variation key="heightClass=compact" axis="horizontal"/>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7HH-ao-Y1w">
+                                <rect key="frame" x="16" y="20" width="60" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="H2L-ak-lUB"/>
+                                    <constraint firstAttribute="height" constant="40" id="xOZ-Ya-VtQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="&lt; Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backTouched:" destination="ZYj-e5-MKW" eventType="touchUpInside" id="kZF-J6-viC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fgf-VU-FC4" firstAttribute="leading" secondItem="JfH-LZ-Sf2" secondAttribute="leadingMargin" id="8i9-xr-ARH"/>
+                            <constraint firstItem="7HH-ao-Y1w" firstAttribute="top" secondItem="CDb-jR-XbL" secondAttribute="bottom" id="DLD-cS-5KU"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="fgf-VU-FC4" secondAttribute="bottom" id="JE1-tN-7kG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fgf-VU-FC4" secondAttribute="trailing" id="UFy-mj-cNY"/>
+                            <constraint firstItem="7HH-ao-Y1w" firstAttribute="leading" secondItem="JfH-LZ-Sf2" secondAttribute="leadingMargin" id="gsn-5D-dxf"/>
+                            <constraint firstItem="fgf-VU-FC4" firstAttribute="top" secondItem="JfH-LZ-Sf2" secondAttribute="topMargin" id="vc0-Kv-qbc"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gfd-0T-Kx8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="972" y="398.95052473763121"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="aboutImg" width="1800" height="1600"/>
+        <image name="icon" width="50" height="50"/>
+        <image name="pluto-main" width="700" height="700"/>
+        <image name="surface1" width="843" height="601"/>
+        <image name="surface2" width="2055" height="1321"/>
+        <image name="surface3" width="1024" height="930"/>
+        <image name="surface4" width="1024" height="923"/>
+        <image name="surface5" width="2939" height="1659"/>
+    </resources>
 </document>
